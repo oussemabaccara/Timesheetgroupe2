@@ -12,6 +12,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Pattern;
 
+
+
+//test
+
 @Entity
 public class Contrat implements Serializable {
 	

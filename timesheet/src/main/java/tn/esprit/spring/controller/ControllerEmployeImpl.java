@@ -34,7 +34,6 @@ public class ControllerEmployeImpl  {
 	private String login; 
 	private String password; 
 	private Boolean loggedIn;
-
 	private Employe authenticatedUser = null; 
 	private String prenom; 
 	private String nom; 

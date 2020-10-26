@@ -1,2 +1,2 @@
 # Timesheetgroupe2
- Continuous Integration training .
+ Continuous Integration learning project.

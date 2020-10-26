@@ -12,10 +12,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Pattern;
 
-
-
-//test
-
 @Entity
 public class Contrat implements Serializable {
 	
@@ -44,6 +40,12 @@ public class Contrat implements Serializable {
 	
 	public Contrat(Date dateDebut, String typeContrat, float salaire) {
 		this.dateDebut = dateDebut;
+		this.typeContrat = typeContrat;
+		this.salaire = salaire;
+	}
+	
+	public Contrat(float telephone, String typeContrat, float salaire) {
+		this.telephone = telephone;
 		this.typeContrat = typeContrat;
 		this.salaire = salaire;
 	}

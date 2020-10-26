@@ -2,6 +2,7 @@ package tn.esprit.spring;
 
 import java.util.EnumSet;
 
+
 import javax.faces.webapp.FacesServlet;
 import javax.servlet.DispatcherType;
 
@@ -20,7 +21,7 @@ import tn.esprit.spring.config.LoginFilter;
 public class TimesheetApplication {
 
 	public static void main(String[] args) {SpringApplication.run(TimesheetApplication.class, args);}
-system.out.println("hhh");
+	
 	@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
 		FacesServlet servlet = new FacesServlet();

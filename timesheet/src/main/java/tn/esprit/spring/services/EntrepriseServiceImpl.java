@@ -20,9 +20,9 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 	@Autowired
 	DepartementRepository deptRepoistory;
 	
-	public int ajouterEntreprise(Entreprise entreprise) {
+	public Entreprise ajouterEntreprise(Entreprise entreprise) {
 		entrepriseRepoistory.save(entreprise);
-		return entreprise.getId();
+		return entreprise;
 	}
 
 	public int ajouterDepartement(Departement dep) {

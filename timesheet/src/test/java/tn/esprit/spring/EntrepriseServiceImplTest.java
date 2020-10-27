@@ -22,6 +22,8 @@ import tn.esprit.spring.services.EntrepriseServiceImpl;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class EntrepriseServiceImplTest {
+	
+	private static final Logger l = Logger.getLogger(EntrepriseServiceImplTest.class);
 
 	@Autowired
 	EntrepriseServiceImpl EntrepriseServiceImpl;
@@ -35,7 +37,7 @@ public class EntrepriseServiceImplTest {
 	@Autowired
 	DepartementRepository deptRepoistory;
 	
-	@Test
+	/*@Test
 	public void testAddEntreprise() throws ParseException {
 		 
 		  //Entreprise  e = new Entreprise("Airbus","aero") ;
@@ -44,7 +46,30 @@ public class EntrepriseServiceImplTest {
 		  assertEquals(e.getName(), entrepriseAdded.getName());
 		  System.out.println(e.getName());
 		  System.out.println(e.getRaisonSocial());
+	}*/
+	
+	/*@Test
+	public void testAddDepartement() throws ParseException {
+		
+		Entreprise entrepriseRetrieved =EntrepriseServiceImpl.getEntrepriseById(1); 
+		 Departement  dep = new Departement("Ghazela",entrepriseRetrieved) ;
+          Departement departementAdded = EntrepriseServiceImpl.ajouterDepartement(dep);
+		  assertEquals(dep.getName(), departementAdded.getName());
+		  System.out.println(dep.getName());
+		}*/
+	
+	
+	@Test
+	public void testgetEntrepriseById() {
+		  Entreprise entrepriseRetrieved =EntrepriseServiceImpl.getEntrepriseById(1); 
+	      assertEquals(1, entrepriseRetrieved.getId());
+	      System.out.println(entrepriseRetrieved.getName());
+	      System.out.println(entrepriseRetrieved.getRaisonSocial());
+	      System.out.println(entrepriseRetrieved.getDepartements());
 	}
+	
+	
+	
 	
 	
 	

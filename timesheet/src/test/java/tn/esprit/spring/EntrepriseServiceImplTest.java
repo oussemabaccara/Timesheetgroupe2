@@ -61,8 +61,11 @@ public class EntrepriseServiceImplTest {
 	
 	@Test
 	public void testgetEntrepriseById() {
+		
+
 		  Entreprise entrepriseRetrieved =EntrepriseServiceImpl.getEntrepriseById(1); 
 	      assertEquals(1, entrepriseRetrieved.getId());
+
 	      System.out.println(entrepriseRetrieved.getName());
 	      System.out.println(entrepriseRetrieved.getRaisonSocial());
 	      System.out.println(entrepriseRetrieved.getDepartements());

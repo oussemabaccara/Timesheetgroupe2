@@ -61,12 +61,12 @@ public class EmployeServiceImplTest {
 	@Test
 	public void getNombreEmployeJPQL() {
 		
-				//Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
-				//Employe e2 = new Employe("oussema", "baccara", "oussema@gmail.com", true, Role.ADMINISTRATEUR);
-				//iemployeservice.addOrUpdateEmploye(e1);
-				//iemployeservice.addOrUpdateEmploye(e2);
+				Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
+				Employe e2 = new Employe("oussema", "baccara", "oussema@gmail.com", true, Role.ADMINISTRATEUR);
+				iemployeservice.addOrUpdateEmploye(e1);
+				iemployeservice.addOrUpdateEmploye(e2);
 				int nbr = iemployeservice.getNombreEmployeJPQL() ;
-				assertEquals(4, nbr);
+				assertEquals(2, nbr);
 }
 	
 	/*

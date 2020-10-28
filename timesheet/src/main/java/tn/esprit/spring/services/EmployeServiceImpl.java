@@ -42,7 +42,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	@Override
 	public int addOrUpdateEmploye(Employe employe) {
-		l.info("addOrUpdateEmploye loading...");
+		l.info("add or update Employe:" + employe);
 		employeRepository.save(employe);
 		return employe.getId();
 	}

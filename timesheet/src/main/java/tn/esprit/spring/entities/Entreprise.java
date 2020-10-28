@@ -27,7 +27,7 @@ public class Entreprise implements Serializable{
 	
 	private String name;
 	
-	
+	//ceci est un commentaire 
 	private String raisonSocial;
 	
 	@OneToMany(mappedBy="entreprise", 

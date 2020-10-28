@@ -96,7 +96,7 @@ public class EmployeServiceImplTest {
 				Entreprise E = entrepriserepository.findById(1).get();
 				List<Employe> L = iemployeservice.getAllEmployeByEntreprise(E);
 				String name = L.get(0).getNom();
-				assertEquals("a", name);
+				assertEquals("zohra", name);
 			}
 	*/
 	/*
@@ -105,8 +105,8 @@ public class EmployeServiceImplTest {
 		
 				
 				int id = employerepository.findById(1).get().getId();
-				iemployeservice.mettreAjourEmailByEmployeIdJPQL("new.new@gmail.tn", id);
-				assertEquals("new.new@gmail.tn", employerepository.findById(1).get().getEmail());
+				iemployeservice.mettreAjourEmailByEmployeIdJPQL("zohra.zohra@gmail.com", id);
+				assertEquals("zohra.zohra@gmail.com", employerepository.findById(1).get().getEmail());
 			}
 	*/
 	
@@ -134,7 +134,7 @@ public class EmployeServiceImplTest {
 		public void getSalaireByEmployeIdJPQL() {
 			
 		
-		assertEquals(200, iemployeservice.getSalaireByEmployeIdJPQL(employerepository.findById(1).get().getId()));
+		assertEquals(1000, iemployeservice.getSalaireByEmployeIdJPQL(employerepository.findById(1).get().getId()));
 				
 	 }
 	 */
@@ -144,8 +144,8 @@ public class EmployeServiceImplTest {
 		 
 		Employe e = employerepository.findById(1).get();
 		Mission m = missionrepository.findById(1).get();
-		Date dateDebut = parseDate("2010-01-01");
-		Date dateFin = parseDate("2025-01-01");
+		Date dateDebut = parseDate("2020-01-01");
+		Date dateFin = parseDate("2021-01-01");
 		 
 		
 	    List<Timesheet> t = iemployeservice.getTimesheetsByMissionAndDate(e, m, dateDebut, dateFin) ;

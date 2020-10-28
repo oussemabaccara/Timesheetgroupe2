@@ -27,7 +27,7 @@ public class Entreprise implements Serializable{
 	
 	private String name;
 	
-	
+	//ceci est un commentaire 
 	private String raisonSocial;
 	
 	@OneToMany(mappedBy="entreprise", 
@@ -80,6 +80,13 @@ public class Entreprise implements Serializable{
 	public void addDepartement(Departement departement){
 		departement.setEntreprise(this);
 		this.departements.add(departement);
+	}
+
+	public Entreprise(int id, String name, String raisonSocial) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.raisonSocial = raisonSocial;
 	}
 
 

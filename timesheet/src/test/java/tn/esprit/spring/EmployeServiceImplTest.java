@@ -58,7 +58,7 @@ public class EmployeServiceImplTest {
 
 */
 	
-	@Test
+	/*@Test
 	public void getNombreEmployeJPQL() {
 		
 				//Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
@@ -67,7 +67,7 @@ public class EmployeServiceImplTest {
 				//iemployeservice.addOrUpdateEmploye(e2);
 				int nbr = iemployeservice.getNombreEmployeJPQL() ;
 				assertEquals(6, nbr);
-}
+}*/
 	
 	
 	
@@ -111,7 +111,7 @@ public class EmployeServiceImplTest {
 	*/
 	
 	
-	 public static Date parseDate(String date) {
+	/* public static Date parseDate(String date) {
 	     try {
 	         return new SimpleDateFormat("yyyy-MM-dd").parse(date);
 	     } catch (ParseException e) {

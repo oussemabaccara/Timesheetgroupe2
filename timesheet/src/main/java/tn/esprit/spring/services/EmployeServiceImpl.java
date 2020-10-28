@@ -181,7 +181,9 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public List<Employe> getAllEmployes() {
+		l.info("Employe List: " + employeRepository.findAll());
 		return (List<Employe>) employeRepository.findAll();
+		
 	}
 
 }

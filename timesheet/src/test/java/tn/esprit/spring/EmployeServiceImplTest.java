@@ -58,7 +58,7 @@ public class EmployeServiceImplTest {
 
 */
 	
-	@Test
+	/*@Test
 	public void getNombreEmployeJPQL() {
 		
 				Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
@@ -76,19 +76,19 @@ public class EmployeServiceImplTest {
 		
 				List<String> L = iemployeservice.getAllEmployeNamesJPQL();
 				String name = L.get(0);
-				assertEquals("a", name);
+				assertEquals("zohra", name);
 			}
 	*/
-	/*
+	
 	@Test
 	public void getAllEmployes() {
 		
 				List<Employe> L = iemployeservice.getAllEmployes();
 				
-				assertEquals(1, L.size());
+				assertEquals(6, L.size());
 			}
 		
-	*/
+	
 	/*
 	@Test
 	public void getAllEmployeByEntreprise() {

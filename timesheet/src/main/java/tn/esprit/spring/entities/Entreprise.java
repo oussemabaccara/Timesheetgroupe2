@@ -38,7 +38,7 @@ public class Entreprise implements Serializable{
 	public Entreprise() {
 		super();
 	}
-
+//ceci est uncommentaire 
 	public Entreprise(String name, String raisonSocial) {
 		this.name = name;
 		this.raisonSocial = raisonSocial;
@@ -47,7 +47,7 @@ public class Entreprise implements Serializable{
 	public int getId() {
 		return id;
 	}
-
+//ceci une autre commentaire
 	public void setId(int id) {
 		this.id = id;
 	}

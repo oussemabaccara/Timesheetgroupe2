@@ -23,14 +23,14 @@ public class EntrepriseServiceImpTest {
     EntrepriseRepository entrepriseRepoistory;
 	
 	
-	/*@Test
+	@Test
 	public void testdeleteEntrepriseById() {
 		
 			Entreprise a = new Entreprise(1,"monentreprise","fiscal");
 			ientrepriseservice.ajouterEntreprise(a);
 			
 			assert (entrepriseRepoistory.findById(a.getId())) != null;
-}*/
+}
 }
 
 

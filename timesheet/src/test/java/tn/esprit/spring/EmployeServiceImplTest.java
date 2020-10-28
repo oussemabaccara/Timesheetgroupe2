@@ -58,20 +58,20 @@ public class EmployeServiceImplTest {
 
 */
 	
-	/*@Test
+	@Test
 	public void getNombreEmployeJPQL() {
 		
-				Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
-				Employe e2 = new Employe("oussema", "baccara", "oussema@gmail.com", true, Role.ADMINISTRATEUR);
-				iemployeservice.addOrUpdateEmploye(e1);
-				iemployeservice.addOrUpdateEmploye(e2);
+				//Employe e1 = new Employe("zohra", "gasmi", "zohra@gmail.com", true, Role.INGENIEUR);
+				//Employe e2 = new Employe("oussema", "baccara", "oussema@gmail.com", true, Role.ADMINISTRATEUR);
+				//iemployeservice.addOrUpdateEmploye(e1);
+				//iemployeservice.addOrUpdateEmploye(e2);
 				int nbr = iemployeservice.getNombreEmployeJPQL() ;
-				assertEquals(2, nbr);
+				assertEquals(6, nbr);
 }
 	
-	/*
 	
-	@Test
+	
+	/*@Test
 	public void getAllEmployeNamesJPQL() {
 		
 				List<String> L = iemployeservice.getAllEmployeNamesJPQL();
@@ -80,13 +80,13 @@ public class EmployeServiceImplTest {
 			}
 	*/
 	
-	@Test
+	/*@Test
 	public void getAllEmployes() {
 		
 				List<Employe> L = iemployeservice.getAllEmployes();
 				
 				assertEquals(6, L.size());
-			}
+			}*/
 		
 	
 	/*

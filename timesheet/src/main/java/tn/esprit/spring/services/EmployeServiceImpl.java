@@ -147,6 +147,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	public int getNombreEmployeJPQL() {
 		l.info("getNombreEmployeJPQL loading...");
+		l.info("il y a "+employeRepository.countemp()+" employes" );
 		return employeRepository.countemp();
 	}
 

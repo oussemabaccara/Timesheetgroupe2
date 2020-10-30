@@ -42,7 +42,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	@Override
 	public int addOrUpdateEmploye(Employe employe) {
-		l.info("addOrUpdateEmploye loading...");
+		l.info("add or update Employe:" + employe);
 		employeRepository.save(employe);
 		return employe.getId();
 	}
@@ -147,6 +147,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	public int getNombreEmployeJPQL() {
 		l.info("getNombreEmployeJPQL loading...");
+		l.info("il y a "+employeRepository.countemp()+" employes" );
 		return employeRepository.countemp();
 	}
 
@@ -181,7 +182,9 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public List<Employe> getAllEmployes() {
+		l.info("Employe List: " + employeRepository.findAll());
 		return (List<Employe>) employeRepository.findAll();
+		
 	}
 
 }
